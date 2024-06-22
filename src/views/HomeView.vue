@@ -1,5 +1,6 @@
 
 <template>
+  <main class="custom-container">
 
   <p>Salut, moi, c'est Patrizia, je n'aurais jamais imaginé créer un site, ni coder quoi que ce soit</p>.
 
@@ -7,7 +8,7 @@
   <section><h1>Réalisations</h1></section>
   <section>Contact</section>
   
-
+</main>
 </template>
 
 
