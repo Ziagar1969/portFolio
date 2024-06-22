@@ -1,18 +1,21 @@
 
+
+
 <template>
+
   <header>
-   
-        <a href="/">
-          <img src="../assets/img/favicon.ico" alt="favicon" />
-        </a> 
-        <div>
-          <h1>Bienvenue !</h1>
-        </div>
-       
-  </header> 
+  <a href="/">
+
+
+    <img src="@/assets/img/papillon/png" alt="bientôt ma photo de profil">
+    <nav-bar></nav-bar>
+  </a>
+
+</header>
     </template>
-    
-  <style>
+
+   
+  <style scoped>
   
   header {
       display: flex;

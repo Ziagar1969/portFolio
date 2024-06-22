@@ -1,26 +1,17 @@
-import './assets/main.css'
-import "./assets/css/style.css"
+import "./assets/CSS/main.css"
+import "./assets/CSS/style.css"
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import NavigationBar from "@/components/NavigationBar.vue"
-import HeaderMain from "@/components/HeaderMain.vue"
-import FooterMain from "@/components/FooterMain.vue"
+import NavigationBar from "../src/components/NavigationBar.vue"
+import HeaderMain from "../src/components/HeaderMain.vue"
+import FooterMain from "../src/components/FooterMain.vue"
 
-import HomeView from "./views/HomeView"
-import AboutView from "./views/AboutView"
-import ContactView from "./views/ContactView"
+import HomeView from "../src/views/HomeView.vue"
+import AboutView from "./views/Realisations.vue"
+import ContactView from "./views/Contact.vue"
 
-
-<template>
-    <div class="row justify-content-center">
-        <HomeView/>
-        <AboutView/>
-        <ContactView/>
-    </div>
-    
-</template>
 
 
 const app = createApp(App)
