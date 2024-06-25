@@ -8,7 +8,7 @@
   
 
   <p class="social-icons">
-<a href="" target="_blank"></a>
+<a href="../assets/img/linkedin.png" target="_blank"></a>
 <a href="" target="_blank"></a>
 <a href="" target="_blank"></a>
   </p>
@@ -19,8 +19,12 @@
 
 
 <style scoped>
-footer {display : flex;
-    max-height: 20 vh;
+footer {
+  display : flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top:600px;
+    max-height: 35px;
     background-color: rgb(202, 184, 219);
 
 border : 2px solid green;

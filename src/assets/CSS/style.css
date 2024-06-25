@@ -1,5 +1,5 @@
 
-body{
+:root{
     background-color: azure;
     h1 {
   color:rgb(102, 102, 204)
@@ -10,28 +10,5 @@ body{
     color:blue
   }
   
-  ul {
-    padding: 0px;
-    margin: 0 px;
-    color:bisque;
-    list-style-type: none;
-     background-color: rgb(58, 2, 45);
-   
-     flex-direction: column;
-   }
-  li{
-    
-     display: inline-flex ;
-     padding: 0px;
-     margin: 0 px;
-     width:200px;
-     height: 120 px;
-     border : 2px solid rgb(13, 168, 13);
-     text-align: center;
-     line-height: 40 px;
-   }
-        
-   li :hover {
-     background-color: blueviolet;
-   }
+  
    

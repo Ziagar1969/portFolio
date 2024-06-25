@@ -1,6 +1,13 @@
-<template>   
+<script setup>
+import NavigationBar from "../components/NavigationBar.vue"
+</script>
+
+
+<template>  
+<NavigationBar/>
+
     <form>
-      <label></label>
+      <label>NOM</label>
       <input type="name" required v-model="name">
   
       <label>Email</label>
@@ -9,8 +16,9 @@
       <textarea class=""></textarea>
   
     </form>
-          <p>Nom</p>
-          <p>Email</p>
+          <p>{{ name }}Nom</p>
+          <p> {{ email }} Email</p>
+          <p> {{ Message }}</p>
           </template>
         
       
@@ -22,6 +30,7 @@
               return {
                   Nom: " ",
                   Email: " ",
+                  Message: " "
               }
           }
       }

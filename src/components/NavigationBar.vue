@@ -1,54 +1,58 @@
 
 <template>
-    <!-- <nav> -->
-        <ul>
-<li v-for="nav in navItems" :key="nav">
-    {{ nav }}
-</li>
-
-
-        <!-- <li><router-link to="/">Accueil</router-link></li>
-        <li><router-link to="/Realisations">Réalisations</router-link></li>
-        <li><router-link to="/ContactView">Contact</router-link></li> -->
+    <nav>
+        <ul id="navul">
+        <li class="menu"><router-link to="/">Accueil</router-link></li>
+        <li class="menu"><router-link to="/Realisations">Réalisations</router-link></li>
+        <li class="menu"><router-link to="/Contact">Contact</router-link></li>
     </ul>  
 
- <!-- </nav> -->
+ </nav>
 
 </template>
+
+
 <script>
-export default {
-    data() {
-        return {
-            navItems: ["Accueil", "Realisations", "Contact"]
-        }
-    }
-}
+
+
 </script>
 
 
 <style scoped>
-nav ul {
-  padding: 0px;
-  margin: 0 px;
-  color:bisque;
+nav {
+  height: 160px;
+}
+
+
+#navul {
+
+  padding: 10px;
+  margin: 10 px;
+  width:min-content;
   list-style-type: none;
-   background-color: rgb(58, 2, 45);
- 
+   background-color: black ;
+  border : solid rgb(182, 221, 182) 1px;
    flex-direction: column;
+   justify-items:flex-end;
+
+
  }
- nav li{
-  
+ .menu {
+   color:bisque;
    display: inline-flex ;
    padding: 0px;
    margin: 0 px;
    width:200px;
    height: 120 px;
-   border : 2px solid rgb(13, 168, 13);
+ border: none;
+
    text-align: center;
-   line-height: 40 px;
+
+  
  }
       
  nav li :hover {
    background-color: blueviolet;
  }
+ </style>
 

@@ -9,17 +9,21 @@ import FooterMain from "./components/FooterMain.vue";
 <template>
   <div id="app"></div>
 
-  <HeaderMain></HeaderMain>
-  <NavigationBar></NavigationBar>
+
+  <h1>ZiagarCode</h1>
+
+    
 
   <main>
     <router-view></router-view>
   </main>
  
   <FooterMain></FooterMain>
+
 </template>
 
-
- 
+<style>
 
 </style>
+
+ 

@@ -7,8 +7,8 @@
   <a href="/">
 
 
-    <img src="@/assets/img/papillon/png" alt="bientôt ma photo de profil">
-    <nav-bar></nav-bar>
+    <img src="../assets/img/favicon.ico" alt="favicon">
+    <div><h2>Bienvenue chez ZiagarCode !</h2></div>
   </a>
 
 </header>
