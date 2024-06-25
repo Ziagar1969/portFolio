@@ -8,9 +8,9 @@ import NavigationBar from "../src/components/NavigationBar.vue"
 import HeaderMain from "../src/components/HeaderMain.vue"
 import FooterMain from "../src/components/FooterMain.vue"
 
-import HomeView from "../src/views/HomeView.vue"
-import AboutView from "./views/Realisations.vue"
-import ContactView from "./views/Contact.vue"
+import Accueil from "./views/Accueil.vue"
+import Realisations from "./views/Realisations.vue"
+import Contact from "./views/Contact.vue"
 
 
 

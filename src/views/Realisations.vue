@@ -1,25 +1,15 @@
-<!-- <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style> -->
 
-<script setup></script>
+
+<script setup>
+import NNavigationBar from "../components/NavigationBar.vue"
+</script>
 
 <template>
+  <NNavigationBar/>
 	<div class="about">
 	
-      <h1>Réalisations</h1>
+      <h2>Réalisations</h2>
 <section id="realisations">
         <p>Vous trouverez ici mes premières réalisations de développeur Web
             <ul>
@@ -34,8 +24,34 @@
 	</div>
 </template>
 
-<script>
+<!-- <script>
 export default {
-  name: "AboutView",
+  name: "Realisations",
 };
-</script>
+</script> -->
+<style scoped>
+ul {
+    padding: 10px;
+    margin: 10 px;
+    color:bisque;
+    list-style-type: none;
+    background-color: rgb(104, 29, 86);
+   
+       }
+  li{
+    
+     display: inline-flex ;
+     flex-wrap: nowrap;
+     padding: 5px;
+     margin: 0 px;
+     width:600px;
+     height: 120 px;
+     border : 2px solid rgb(13, 168, 13);
+     text-align: center;
+     line-height: 40 px;
+   }
+        
+   li :hover {
+     background-color: blueviolet;
+   }
+</style>
