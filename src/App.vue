@@ -8,6 +8,8 @@ import FooterMain from "./components/FooterMain.vue";
 
 <template>
   <div id="app"></div>
+  <NavigationBar/>
+  <HeaderMain/>
 
 
   <h1>ZiagarCode</h1>
@@ -23,6 +25,13 @@ import FooterMain from "./components/FooterMain.vue";
 </template>
 
 <style>
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+} 
 
 </style>
 

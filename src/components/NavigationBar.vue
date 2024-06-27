@@ -28,13 +28,12 @@ nav {
 
   padding: 10px;
   margin: 10 px;
-  width:min-content;
+  width:100%;
   list-style-type: none;
-   background-color: black ;
+  background-color: black ;
   border : solid rgb(182, 221, 182) 1px;
-   flex-direction: column;
-   justify-items:flex-end;
-
+  flex-direction: column;
+  justify-items:flex-end;
 
  }
  .menu {
@@ -44,7 +43,7 @@ nav {
    margin: 0 px;
    width:200px;
    height: 120 px;
- border: none;
+   border: none;
 
    text-align: center;
 

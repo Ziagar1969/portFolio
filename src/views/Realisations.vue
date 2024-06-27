@@ -1,12 +1,10 @@
 
 
 
-<script setup>
-import NNavigationBar from "../components/NavigationBar.vue"
-</script>
+
 
 <template>
-  <NNavigationBar/>
+  
 	<div class="about">
 	
       <h2>Réalisations</h2>
@@ -31,6 +29,7 @@ export default {
 </script> -->
 <style scoped>
 ul {
+    width:100% ;
     padding: 10px;
     margin: 10 px;
     color:bisque;
@@ -41,12 +40,12 @@ ul {
   li{
     
      display: inline-flex ;
-     flex-wrap: nowrap;
+
      padding: 5px;
      margin: 0 px;
-     width:600px;
+     width:90%;
      height: 120 px;
-     border : 2px solid rgb(13, 168, 13);
+     /* border : 1px solid rgb(13, 168, 13); */
      text-align: center;
      line-height: 40 px;
    }

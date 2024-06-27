@@ -1,23 +1,19 @@
-
 <script setup>
-import NavigationBar from '@/components/NavigationBar.vue';
+import FooterMain from '@/components/FooterMain.vue';
 </script>
 
 <template>
-<NavigationBar/>
 
   <main>
-
-  
 
   <section>
     <h2>Accueil</h2>
     <p>Salut, moi, c'est Patrizia, je n'aurais jamais imaginé créer un site, ni coder quoi que ce soit</p>
   </section>
-  <section><h2>Réalisations</h2></section>
-  <section><h2>Contact</h2></section>
-  
+   
 </main>
+<FooterMain/>
+
 </template>
 
 

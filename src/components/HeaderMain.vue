@@ -4,11 +4,13 @@
 <template>
 
   <header>
+    
   <a href="/">
-
-
+    <div>
+    <h2>Bienvenue chez ZiagarCode !</h2>
     <img src="../assets/img/favicon.ico" alt="favicon">
-    <div><h2>Bienvenue chez ZiagarCode !</h2></div>
+    </div> 
+    
   </a>
 
 </header>
@@ -17,13 +19,14 @@
    
   <style scoped>
   
-  header {
+  header div {
       display: flex;
-      background-color: rgb(202, 184, 219);
+      justify-content: space-between;
+      width:auto;
+      background-color: rgb(32, 7, 56);
+      padding:1%;
+      align-items:center;
+
   }
-  div {
-    background-color: rgb(139, 204, 139);
-  }
-  
-  
+
   </style>

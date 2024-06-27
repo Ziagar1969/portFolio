@@ -22,10 +22,11 @@
 footer {
   display : flex;
   justify-content:center ;
+  align-self: last baseline;
   align-items: center;
   margin-top:600px;
-    max-height: 35px;
-    background-color: rgb(202, 184, 219);
+  max-height: 35px;
+  background-color: rgb(202, 184, 219);
 
 border : 2px solid green;
 
