@@ -8,11 +8,12 @@ import FooterMain from "./components/FooterMain.vue";
 
 <template>
   <div id="app"></div>
+
+ 
   <NavigationBar/>
   <HeaderMain/>
 
 
-  <h1>ZiagarCode</h1>
 
     
 
@@ -34,5 +35,8 @@ import FooterMain from "./components/FooterMain.vue";
 } 
 
 </style>
+<script>
+
+</script>
 
  

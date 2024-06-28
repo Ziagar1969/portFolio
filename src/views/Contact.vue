@@ -2,6 +2,7 @@
 
 
 <template>  
+  <h1>{{ titre }}</h1>
 
 
     <form>
@@ -25,11 +26,13 @@
       <script>
       export default {
           name: "ContactView",
+        
           data() {
               return {
                   Nom: " ",
                   Email: " ",
-                  Message: " "
+                  Message: " ",  
+                  titre: "Me contacter"
               }
           }
       }
