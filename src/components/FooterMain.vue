@@ -3,32 +3,56 @@
 </script>
 <template>
     <footer>
-        <p>&copy ZiagarCode</p>
-        <p>Dernière mise à jour : Juin 2024</p>
+        <p><small>&copy ZiagarCode</small></p>
+        <p><small>Dernière mise à jour : Juin 2024</small></p>
   
 
-  <p class="social-icons">
-<a href="../assets/img/linkedin.png" target="_blank"></a>
-<a href="" target="_blank"></a>
-<a href="" target="_blank"></a>
+  <p>
+<a href="https://www.linkedin.com/in/patrizia-garau-aa2139172/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bc7%2FwIk4BRiulzEqdN00bNw%3D%3D" >
+  <img src="../assets/img/linkedin.png"  alt="profil linkedin"></a>
+
+  <a href="https://www.facebook.com/patrizia.frison.3" >
+    <img src="../assets/img/facebook.png"  alt="profil facebook"></a>
+
+    <a href="https://x.com/ZiagarC" >
+    <img src="../assets/img/x_logo.avif"  alt="profil X"></a>
+
   </p>
+
+
+
+
 
    </footer>
 </template>
 
 
 
+
+
+
+
+
+
 <style scoped>
 footer {
+  padding: 10px;
   display : flex;
-  justify-content:center ;
-  align-self: last baseline;
+  width: 100%;
+  justify-content:space-around ;
   align-items: center;
-  margin-top:600px;
+  margin-top: 10px;
   max-height: 35px;
   background-color: rgb(202, 184, 219);
+  position:static;
 
 border : 2px solid green;
 
+}
+
+
+img {
+  width: 30px;
+  border-radius: 60%;
 }
 </style>
