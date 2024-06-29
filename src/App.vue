@@ -13,13 +13,11 @@ import FooterMain from "./components/FooterMain.vue";
   <NavigationBar/>
   <HeaderMain/>
 
-
-
-    
-
   <main>
-    <router-view></router-view>
-  </main>
+
+    <router-view></router-view>  
+    
+   </main>
  
   <FooterMain></FooterMain>
 
@@ -33,7 +31,6 @@ import FooterMain from "./components/FooterMain.vue";
   flex-direction:column;
   justify-content: space-around;
 } 
-
 </style>
 <script>
 
