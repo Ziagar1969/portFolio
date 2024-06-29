@@ -8,7 +8,7 @@
   
 
   <p>
-<a href="https://www.linkedin.com/in/patrizia-garau-aa2139172/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bc7%2FwIk4BRiulzEqdN00bNw%3D%3D" >
+<a href="https://www.linkedin.com/in/patrizia-garau-aa2139172/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BKQAdMSvUT0eFXhj302nZXw%3D%3D" >
   <img src="../assets/img/linkedin.png"  alt="profil linkedin"></a>
 
   <a href="https://www.facebook.com/patrizia.frison.3" >
@@ -18,7 +18,6 @@
     <img src="../assets/img/x_logo.avif"  alt="profil X"></a>
 
   </p>
-
 
 
 
@@ -36,13 +35,13 @@
 
 <style scoped>
 footer {
-  padding: 10px;
+  padding: 15px;
   display : flex;
   width: 100%;
   justify-content:space-around ;
   align-items: center;
   margin-top: 10px;
-  max-height: 35px;
+  max-height: 45px;
   background-color: rgb(202, 184, 219);
   position:static;
 
@@ -52,7 +51,7 @@ border : 2px solid green;
 
 
 img {
-  width: 30px;
+  width: 25px;
   border-radius: 60%;
-}
+ }
 </style>

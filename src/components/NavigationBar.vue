@@ -18,15 +18,12 @@
 </script>
 
 
-<style scoped>
-nav {
-  height: 160px;
-}
+<style>
 
 
 #navul {
 
-  padding: 10px;
+  padding: 20px;
   margin: 10 px;
   width:100%;
   list-style-type: none;
