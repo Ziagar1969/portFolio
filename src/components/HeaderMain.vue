@@ -9,9 +9,8 @@
     <div>
       <h1>{{ titre }}</h1>
     <img src="../assets/img/favicon.ico" alt="favicon">
-    </div> 
-    
-  </a>
+  </div> 
+</a>
 
 </header>
     </template>
@@ -36,13 +35,17 @@ h1 {
       
     }
 
+    
+
   
   header div {
-      display: flex;
+      display:flex;
+      flex-direction: row;
       justify-content: space-between;
       width:auto;
       background-color: rgb(32, 7, 56);
       padding:1%;
+      margin-bottom: 50px;
       align-items:center;
 
   }
@@ -51,7 +54,7 @@ h1 {
       align-self: baseline;
    
       }
-
+  
 
 
   </style>

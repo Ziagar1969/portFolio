@@ -42,7 +42,8 @@ footer {
   align-items: center;
   margin-top: 10px;
   max-height: 45px;
-  background-color: rgb(202, 184, 219);
+  background-color: rgb(32, 7, 56);
+  color:rgb(233, 186, 236);
   position:static;
 
 border : 2px solid green;

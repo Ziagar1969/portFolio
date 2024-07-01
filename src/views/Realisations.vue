@@ -31,13 +31,7 @@ export default {
         case "modal3":
         this.modalTitle = "Espace de commentaires en ligne";
         this.modalImage = "../assets/img/commentaires2.png";
-        break;
-
-        case "modal4":
-        this.modalTitle = "Certificat Udemy JS";
-        this.modalImage = "../assets/images/formUdemy.jpg";
-        break;
-
+        break
 
       }
    
@@ -51,54 +45,77 @@ export default {
 
 <template>
 
+<div>
+        <a href="https://www.udemy.com/" 
+        target="_blank">
+        <img src="../assets/img/formUdemy.jpg" 
+        id="Udemy"  
+        alt="visuelprojet" 
+        title="Visiter le site">
+        </a>
+
+</div>
+
 	
       <h2>Réalisations</h2>
 
   <div id="section"> <h4>Vous trouverez ici mes premières réalisations de développeur Web</h4></div>
 
   <main> 
-  <article><h5 id="modal1">CV en ligne</h5>
-     <img class="projet" src="../assets/img/cvonline.png" alt="visuelprojet" @click="openModal('modal1')"/>
-       <Modal ref="modal1">
-          <h2 id= {{ modalTitle }}>CV en ligne</h2>
-      <a href="google.fr" target="_blank">
-  <p>Télécharger le projet</p>
-    </a>
-      </Modal>
-            </article>
-
-  <article><h5 id="modal2">Cahier des charges</h5>
-    <img src="../assets/img/cdcharges.png" alt="visuelprojet" @click="openModal('modal2')"/>
-         <Modal ref="modal2">
-     <h2>{{ modalTitle }}</h2>
-<a href="../assets/downloads/corrigecahierdcharges.pdf"   target="_blank">
-  <p>Télécharger le projet</p>
-    </a>
-        </Modal>
-
-</article>
-
-  <article><h5 id="modal3">Espace de commentaires en ligne</h5> 
-    <img src="../assets/img/commentaires2.png" alt="visuelprojet" @click="openModal('modal3')"/>
-         <Modal ref="modal3">
-  <h2>{{ modalTitle }}</h2>
-<a href="../assets/img/commentaires2.png" target="_blank">
-     <p>Télécharger le projet</p>
-       </a>
-         </Modal>
-
+   <article><h5>CV en ligne</h5>
+     <img class="projet" 
+     src="../assets/img/cvonline.png" 
+     alt="visuelprojet" 
+     @click="openModal('modal1')"/>
+     <p><a href="../assets/downloads/cvonline.htm">Télécharger le projet</a></p>
   </article>
 
-  <article><h5 id="modal4">Formation Udemy</h5>
-      <img src="../assets/img/formUdemy.jpg" alt="visuelprojet" @click="openModal('modal4')"/>
-           <Modal ref="modal4">
-       <h2>{{ modalTitle }}</h2>
-    <a href="../assets/img/formUdemy.jpg" target="_blank">
-        <p>Formation Udemy JS</p>
-          </a>
-             </Modal>
-       </article>
+  <article><h5 id="modal2">Cahier des charges</h5>
+    <img src="../assets/img/cdcharges.png" 
+    alt="visuelprojet" 
+    @click="openModal('modal2')"/>
+    <p>Télécharger le projet</p>
+ </article>
 
+  <article><h5 id="modal3">Espace de commentaires en ligne</h5> 
+    <img src="../assets/img/commentaires2.png" 
+    alt="visuelprojet" 
+    @click="openModal('modal3')"/>
+    <p><a href="../assets/liens/PGComments.htm" target="_blank">Télécharger le projet </a></p>
+  </article>
+
+ 
+        
+
+ 
+
+   <Modal ref="modal1">
+        <h2>{{ modalTitle }}</h2>
+        <a href="google.fr" target="_blank">
+          <h5>
+         <p class="download_github"><a href="../assets/liens/cvonline.htm"></a></p>
+          </h5>
+        </a>
+   </Modal>
+   <Modal ref="modal2">
+        <h2>{{ modalTitle }}</h2>
+        <a href="google.fr" target="_blank">
+          <h5>
+        <p><a href="../assets/downloads/corrigecahierdcharges.pdf">Télécharger le projet</a></p>
+          </h5>
+        </a>
+   </Modal>
+
+   <Modal ref="modal3">
+        <h2>{{ modalTitle }}</h2>
+        <a href="google.fr" target="_blank">
+          <h5>
+         <p class="download_github"><a href="../assets/liens/PGComments.htm">Télécharger le projet</a></p>
+          </h5>
+        </a>
+   </Modal>
+
+      
 </main> 
 </template>
 
@@ -109,9 +126,9 @@ export default {
 #section {
 display: flex;
 flex-direction: row;
-flex-wrap: nowrap;
-background-color: rgb(32, 7, 56);
 
+
+background-color: rgb(32, 7, 56);
 color: white;
 justify-content: center;
 align-items: center;
@@ -119,17 +136,34 @@ align-items: center;
 }
 
 img {
-  width: 250px;
-  border: solid 3px rgba(79, 167, 68, 0.829);
-
+ width: 350px;
+  height:500px;
+  border: solid 3px rgba(25, 29, 24, 0.829);
 }
 
 main {
   display:flex;
   flex-direction: row;
   justify-content:space-between;
+  flex-wrap: wrap;
+align-content: flex-end;
 }
 h2, h5 {
   color:rgb(199, 209, 236);
 }
+#Udemy {
+  display:flex;
+ 
+  width:auto;
+  height: 200px;
+ }
+
+ #Udemy:hover {
+  height: 300px;
+  margin:0;
+position:sticky;
+
+ }
+
+
 </style>
