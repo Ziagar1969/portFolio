@@ -9,6 +9,7 @@ import FooterMain from "./components/FooterMain.vue";
 
 <template>
   <div id="app"></div>
+  <background-image src="../src/assets/img/papillon.png" alt="background-image"></background-image>
 
  
   <NavigationBar/>
