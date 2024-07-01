@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "emailjs": "^4.0.3",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

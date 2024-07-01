@@ -5,41 +5,79 @@
   <h1>{{ titre }}</h1>
 
 
-    <form>
-      <label>NOM</label>
-      <input type="name" required v-model="name">
-  
-      <label>Email</label>
-      <input type="email" required v-model="email">
-      <label>Message</label>
-      <div id="message">
-      <textarea v-model="Message"></textarea>
-  </div>
-    </form>
-          <p>{{ name }} </p>
-          <p> {{ email }} </p>
-          <p> {{ Message }} </p>
-          </template>
+    <form ref="form" @submit.prevent="sendEmail">
         
+            <label>NOM</label>
+              <input type="name" required v-model="name" name="user_name">
+  
+              <label>Email</label>
+            <input type="email" required v-model="email" name="user_email">
+          <label>Message</label>
+      <div id="message">
+        <textarea v-model="message" name="message"></textarea>
+         </div>
+             <div v-if="formNotFilled" class="text-red-500 mb-3">Veuillez remplir tous les champs.</div>
+                <div v-if="successMessage" class="text-green-500 mb-3">{{ successMessage }}</div>
+             <input type="submit" value="Send"/>
+         </form>
+
+
+            </template>
       
   
       <script>
+      import emailjs from "@emailjs/browser";
       export default {
-          name: "ContactView",
-        
-          data() {
+        name:"ContactView",
+        data() {
               return {
                   Nom: " ",
                   Email: " ",
                   Message: " ",  
-                  titre: "Me contacter"
-              }
-          }
-      }
+                  titre: "Me contacter",
+                  formNotFilled: false,
+                  successMessage: "",
+              };
+          },
+
+        
+        methods: {
+            sendEmail() {
+                if (!this.name || !this.email || !this.message) {
+                    this.formNotFilled = true;
+                    this.successMessage = "";
+                    return;
+                }
+
+                emailjs.sendForm(
+                    "service_2in15u7",
+                    "template_g6legej",
+                    this.$refs.form,
+                    "ZbS01-Py7TrcYy8UX"
+                )
+                .then(
+                    (result) => {
+                        console.log("SUCCESS!", result.text);
+                        this.formNotFilled = false;
+                        this.successMessage = "Email envoyé avec succès";
+                        this.name = "";
+                        this.email = "";
+                        this.message = "";
+                    },
+                    (error) => {
+                        console.log("FAILED...", error.text);
+                    }
+
+                );
+            },
+        },
+          
+        
+      };
   </script>
   <style >
 form {
-    max-width: 620px;
+    max-width: 720px;
     margin: 30 px auto;
     background:rgb(174, 218, 105);
     text-align: left;
