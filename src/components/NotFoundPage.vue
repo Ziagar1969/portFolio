@@ -3,7 +3,7 @@
 
 <template>
       <div>
-        <h1> ...oups ! on a dû mal vous indiquer le chemin...</h1>
+        <h1> ...oups ! il n'y a pas grand'chose par ici...</h1>
         </div>
             <div>
              <img src="../assets/img/paysagelunaire.jpg" alt="paysage lunaire" repeat="no-repeat"></img>

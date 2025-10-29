@@ -3,8 +3,9 @@
     <nav>
         <ul id="navul">
         <li class="menu"><router-link to="/">Accueil</router-link></li>
-        <li class="menu"><router-link to="/Realisations">Réalisations</router-link></li>
+        <li class="menu"><router-link to="Nouvelle">Réalisations</router-link></li>
         <li class="menu"><router-link to="/Contact">Contact</router-link></li>
+   
     </ul>  
 
  </nav>
@@ -12,37 +13,36 @@
 </template>
 
 
-<script>
-
-
-</script>
 
 
 <style>
 
 
-#navul {
 
+nav {
+  width:fit-content;
+  position:fixed;
+  top: 1.5rem;
+  nav-right: 1.5rem;
+}
+#navul {
+  display: flex;
   padding: 20px;
-  margin: 10 px;
-  width:100%;
+
   list-style-type: none;
-  background-color: black ;
-  border : solid rgb(182, 221, 182) 1px;
   flex-direction: column;
   justify-items:flex-end;
 
  }
  .menu {
-   color:bisque;
-   display: inline-flex ;
+
    padding: 0px;
    margin: 0 px;
-   width:200px;
-   height: 120 px;
+
+
    border: none;
 
-   text-align: center;
+
 
   
  }

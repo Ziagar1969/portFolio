@@ -1,0 +1,40 @@
+
+
+  @media screen and (max-width: 800px) {
+  *{
+     
+    box-sizing: border-box;
+    width: auto;
+      margin: 0;
+      padding: 0;
+
+
+  }
+
+
+
+img, textarea, input, table {
+      max-width: 100%;
+    }
+
+  
+    textarea, p {
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+      word-wrap: break-word;
+    } 
+    
+    */ Nouvelle.vue */
+
+    
+    .modale {
+      width: 30%;
+      
+    }
+    .overlay {
+      margin: 0;
+    }
+ 
+
+  }

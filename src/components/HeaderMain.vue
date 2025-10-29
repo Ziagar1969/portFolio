@@ -4,56 +4,43 @@
 <template>
 
   <header>
+
     
-  <a href="/">
-    <div>
-      <h1>{{ titre }}</h1>
-    <img src="../assets/img/favicon.ico" alt="favicon">
-  </div> 
-</a>
+  
+<h1>ZiagarCode</h1>
+     
+      
+ 
 
 </header>
     </template>
 
 <script>
+
 export default {
-  data() {
-    return {
-      titre: "ZiagarCode"
-    }
-  }
+ name: "Header"
 }
 </script>
    
   <style scoped>
+ 
 
 h1 {
       color:rgb(102, 102, 204);
+      padding-left: 10px;
+      padding-bottom: 150px;
+      border-radius: 1%;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-weight: 700;
-      font-size:5rem;
-      
+      font-size:calc(2rem + 1vw);
+      background-image: url(../assets/img/papillon500.png );  
+      background-repeat: no-repeat;
+      background-size: 350px;
+      background-position: left;
+      margin: 130px;
+      opacity: 70%;
+          
     }
-
-    
-
-  
-  header div {
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width:auto;
-      background-color: rgb(32, 7, 56);
-      padding:1%;
-      margin-bottom: 50px;
-      align-items:center;
-
-  }
-  header img {
-      width:7%;
-      align-self: baseline;
    
-      }
   
 
 

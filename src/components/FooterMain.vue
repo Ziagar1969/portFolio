@@ -14,8 +14,11 @@
   <a href="https://www.facebook.com/patrizia.frison.3" >
     <img src="../assets/img/facebook.png"  alt="profil facebook"></a>
 
-    <a href="https://x.com/ZiagarC" >
+    <a href="https://x.com/home" >
     <img src="../assets/img/x_logo.avif"  alt="profil X"></a>
+
+    <!-- <a href="https://www.udemy.com/" >
+      <img src="../assets/img/udemy.png"  alt="udemy"></a> -->
 
   </p>
 
@@ -35,24 +38,36 @@
 
 <style scoped>
 footer {
-  padding: 15px;
-  display : flex;
+  position:relative;
+  padding: 6px;
+  display:grid;
+  grid-auto-flow:column ;
   width: 100%;
-  justify-content:space-around ;
-  align-items: center;
-  margin-top: 10px;
-  max-height: 45px;
-  background-color: rgb(32, 7, 56);
+  justify-content: center ;
+ 
+  
+  margin-top: 5px;
+  max-height: 60px;
+  background-color: black;
   color:rgb(233, 186, 236);
+  /* border : solid rgb(182, 221, 182) 1px; */
   position:static;
 
-border : 2px solid green;
+
+
+}
+p {
+  display:grid;
+  grid-auto-flow: column;
 
 }
 
 
 img {
   width: 25px;
-  border-radius: 60%;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
  }
 </style>
